@@ -1,44 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <h1>Avaliação Mirante</h1>
+    <p>
+        Organize de maneira fácil contato de pessoas e cadastros dos operadores de sua empresa!
+    </p>
+    <div>
+        <a href="#tecnologias">Tecnologias</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="#integracao">Integração</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="#telas">Telas</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="#creditos">Créditos</a>
+    </div>
+</div>
 
-## Available Scripts
+<h2 id="tecnologias">Tecnologias</h2>
 
-In the project directory, you can run:
++ [React](https://github.com/facebook/create-react-app)
++ [Axios](https://github.com/axios/axios)
++ [Cpf-cnpj-validator](https://github.com/carvalhoviniciusluiz/cpf-cnpj-validator)
++ [React-datepicker](https://github.com/Hacker0x01/react-datepicker)
++ [Sweetalert](https://sweetalert.js.org/)
 
-### `npm start`
+<h2 id="instalacao">Instalação</h2>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+``
+$ npm install 
+``
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h2 id="desenvolvimento">Desenvolvimento</h2>
 
-### `npm test`
+``
+$ npm start
+``
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A aplicação estará disponível no endereço: [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
+Certifique-se de que a API [Avaliação Mirante - Backend](https://github.com/amandabezerra/avaliacao-mirante-backend) está disponível no endereço [http://localhost:8080](http://localhost:8080).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2 id="integracao">Integração</h2>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+API para utilização da aplicação está disponível no repositório [Avaliação Mirante - Backend](https://github.com/amandabezerra/avaliacao-mirante-backend).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<h2 id="telas">Telas</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Login
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="src/assets/layout/login.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Administrador
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="src/assets/layout/pagina-administrador.png">
+<img src="src/assets/layout/cadastro-operador.png">
+<img src="src/assets/layout/operador-cadastrado.png">
+<img src="src/assets/layout/editar-operador.png">
+<img src="src/assets/layout/operador-atualizado.png">
 
-## Learn More
+### Gerente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="src/assets/layout/pagina-gerente.png">
+<img src="src/assets/layout/cadastro-pessoa.png">
+<img src="src/assets/layout/pessoa-cadastrada.png">
+<img src="src/assets/layout/editar-pessoa.png">
+<img src="src/assets/layout/pessoa-atualizada.png">
+<img src="src/assets/layout/cadastrar-telefone.png">
+<img src="src/assets/layout/telefone-cadastrado.png">
+<img src="src/assets/layout/visualizar-pessoa-com-excluir.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Analista
+
+<img src="src/assets/layout/pagina-analista.png">

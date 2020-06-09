@@ -1,0 +1,121 @@
+#page-create-person {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+#page-create-person header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+#page-create-person header a {
+  align-items: center;
+  color: var(--title-color);
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#page-create-person header a svg {
+  color: var(--primary-color);
+  margin-right: 16px;
+}
+
+#page-create-person form {
+  background: #FFF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  max-width: 600px;
+  padding: 64px;
+}
+
+#page-create-person form h1 {
+  font-size: 36px;
+}
+
+#page-create-person form fieldset {
+  margin-top: 64px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#page-create-person form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-create-person form .field input[type=text],
+#page-create-person form .field input[type=password],
+#page-create-person form .field input[type=email],
+#page-create-person form .field input[type=number] {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#page-create-person form .field select {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#page-create-person form .field input::placeholder {
+  color: #A0A0B2;
+}
+
+#page-create-person form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#page-create-person form .field :disabled {
+  cursor: not-allowed;
+}
+
+#page-create-person form .field-group {
+  flex: 1;
+  display: flex;
+}
+
+#page-create-person form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+#page-create-person form .field-group input + input {
+  margin-left: 24px;
+}
+
+#page-create-person form .submitButton {
+  width: 260px;
+  height: 56px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  align-self: flex-end;
+  margin-top: 40px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#page-create-person form .submitButton:hover {
+  background: #2FB86E;
+}
