@@ -6,6 +6,8 @@ import api from '../../services/api';
 
 import './styles.css';
 
+import Footer from '../../components/Footer';
+
 const Login = () => {
   const history = useHistory();
   
@@ -85,6 +87,8 @@ const Login = () => {
           <button type="submit">Entrar</button>
         </form>
       </div>
+
+      <Footer />
     </div>
   );
 }

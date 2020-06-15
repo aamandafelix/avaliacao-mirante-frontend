@@ -7,6 +7,9 @@ import api from '../../services/api';
 
 import './styles.css';
 
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
 interface Operador {
   id: number;
   nome: string;
@@ -40,7 +43,7 @@ const Administrador = () => {
         handleLogout();
       }
     );
-  }, [jwt, handleLogout]);
+  }, [jwt]);
 
   function navigateToEditOperador(operadorId: number) {
     history.push('/editar-operador', { id: operadorId });
@@ -73,14 +76,8 @@ const Administrador = () => {
   return (
     <div id="page-admin">
       <div className="content">
-        <header>
-          <h1>Bem vindo, Administrador!</h1>
+        <Header title={'Bem vindo, Administrador!'}/>
 
-          <button title="Logout" onClick={handleLogout} type="button">
-            <FiPower size={18} color="#E02041" />
-          </button>
-        </header>
-       
         <div className="createButton">
           <h2>Operadores</h2>
           <button type="submit" onClick={handleNavigateToCreateOperador}>Cadastrar novo Operador</button>
@@ -88,10 +85,7 @@ const Administrador = () => {
 
         <ul>
           {operadores.map(operador => (
-            <li
-              key={operador.id}
-              onClick={() => {}}
-            >
+            <li key={operador.id}>
               <span>{operador.nome}</span>
 
               <div className="buttons">
@@ -118,6 +112,7 @@ const Administrador = () => {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

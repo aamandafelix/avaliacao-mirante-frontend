@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { FiPower, FiArrowRightCircle } from 'react-icons/fi';
+import { FiArrowRightCircle } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
 
 import api from '../../services/api';
 
 import './styles.css';
+
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 interface Pessoa {
   id: number;
@@ -40,7 +43,7 @@ const Analista = () => {
         handleLogout();
       }
     );
-  }, [jwt, handleLogout]);
+  }, [jwt]);
 
   function handleNavigateToDetailPessoa(operadorId: number) {
     history.push('/visualizar-pessoa', { id: operadorId });
@@ -54,13 +57,7 @@ const Analista = () => {
   return (
     <div id="page-analista">
       <div className="content">
-        <header>
-          <h1>Bem vindo, Analista!</h1>
-
-          <button title="Logout" onClick={handleLogout} type="button">
-            <FiPower size={18} color="#E02041" />
-          </button>
-        </header>
+        <Header title={'Bem vindo, Analista!'}/>
 
         <h2>Pessoas</h2>
 
@@ -89,6 +86,7 @@ const Analista = () => {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }
